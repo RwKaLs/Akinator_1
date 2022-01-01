@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="550sp"
+        android:text="@string/play_comp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_main"
+        android:id="@+id/greetings"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetings"
+        android:layout_marginTop="15sp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_main"
+        android:text="@string/comp_hint"
+        android:id="@+id/tv_hint"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/try_btn"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint"
+        android:layout_marginTop="25sp"
+        android:hint="@string/comp_hihint"
+        android:id="@+id/edit_ans"
+        tools:ignore="TextFields" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tv_hint"
+        android:layout_marginTop="25sp"
+        app:layout_constraintLeft_toRightOf="@+id/edit_ans"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/btn_main"
+        android:text="@string/try_now"
+        android:textColor="@color/txt_main"
+        android:id="@+id/try_btn"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

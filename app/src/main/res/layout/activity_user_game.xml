@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".User_Game">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:gravity="center"
+        android:layout_marginBottom="500sp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_main"
+        android:text="@string/play_user"
+        android:id="@+id/hint_u"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/hint_u"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="25sp"
+        android:textSize="25sp"
+        android:textColor="@color/txt_main"
+        android:id="@+id/tv_us"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lower"
+        app:layout_constraintTop_toBottomOf="@+id/tv_us"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_bigger"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/btn_main"
+        android:textColor="@color/txt_main"
+        android:id="@+id/btn_lower"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bigger"
+        app:layout_constraintTop_toBottomOf="@+id/tv_us"
+        app:layout_constraintLeft_toRightOf="@id/btn_lower"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100sp"
+        android:backgroundTint="@color/btn_main"
+        android:textColor="@color/txt_main"
+        android:id="@+id/btn_bigger"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yes"
+        app:layout_constraintTop_toBottomOf="@+id/btn_bigger"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="25sp"
+        android:backgroundTint="@color/btn_main"
+        android:textColor="@color/txt_main"
+        android:id="@+id/btn_yeah"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
