@@ -14,7 +14,7 @@ class User_Game : AppCompatActivity() {
     private lateinit var btn_r : Button
     private lateinit var btn_y : Button
     private var ceff by Delegates.notNull<Int>()
-    private var attempts : Int = 11
+    private var attempts : Int = 10
     private var fl : Int = 0
     private var d : Int = 1
     private var u : Int = 1000
@@ -36,7 +36,7 @@ class User_Game : AppCompatActivity() {
                         ceff = 500
                         tv_us.text = "Это 500?"
                         fl = 0
-                        attempts = 11
+                        attempts = 10
                         d = 1
                         u = 1000
                     } else {
@@ -66,7 +66,7 @@ class User_Game : AppCompatActivity() {
     private fun howAt(){
         if (attempts < 1){
             tv_us.text = "Кто-то врёт! Заново?"
-            attempts = 11
+            attempts = 10
         }
     }
 }

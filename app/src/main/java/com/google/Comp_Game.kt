@@ -25,7 +25,7 @@ class Comp_Game : AppCompatActivity() {
         tv_hint = findViewById(R.id.tv_hint)
         ed_ans = findViewById(R.id.edit_ans)
         try_btn = findViewById(R.id.try_btn)
-        attempts = 20
+        attempts = 10
         num = Random.nextInt(from, till)
         val onclck: View.OnClickListener = View.OnClickListener{ v ->
             if (v.id == R.id.try_btn) {
@@ -57,7 +57,7 @@ class Comp_Game : AppCompatActivity() {
         if (attempts < 1) {
             tv_hint.text = "Загадываю новое! Пробуй!"
             num = Random.nextInt(from, till)
-            attempts = 20
+            attempts = 10
         }
     }
 }

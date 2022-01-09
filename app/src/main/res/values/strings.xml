@@ -3,8 +3,8 @@
     <string name="chmod">Кто угадывает?</string>
     <string name="user">Пользователь</string>
     <string name="computer">Компьютер</string>
-    <string name="play_comp">Загадал число от 1 до 1000.\nОтгадай за 11 попыток</string>
-    <string name="play_user">Загадай число от 1 до 1000.\nОтгадаю за 11 попыток.\nОтвечай на вопрос!</string>
+    <string name="play_comp">Загадал число от 1 до 1000.\nОтгадай за 10 попыток</string>
+    <string name="play_user">Загадай число от 1 до 1000.\nОтгадаю за 10 попыток.\nОтвечай на вопрос!</string>
     <string name="lower">Меньше!</string>
     <string name="bigger">Больше!</string>
     <string name="yes">Да!</string>
